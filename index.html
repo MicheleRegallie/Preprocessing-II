@@ -12,6 +12,14 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  <!-- what is needed:
+  1. Navigation: Use the navigation.less file for all your navigation styling
+  2. Main Header: Use the home-page.less file for the header styling.
+  3. Buttons: Create a parametric mixin that can create the missing buttons in the design file. Use the mixins.less file to create your mixin.
+  4.  Use escaping to create a variable named @mobile that contains this value: (max-width: 500px). Use the variables.less file to house your variables.
+  
+  
+  -->
 </head>
 
 <body>
@@ -19,7 +27,22 @@
   
      
   <div class="container home">
-   
+   <header class="navigation">
+    <h1>Fun Bus</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+   <hr class="dotted">
+   <img class="bus-img" src="img\fun-bus.jpg">
+   <section class="header">
+    <h2>Welcome to Fun Bus!</h2>
+    <p>Traveling expedition modern, clean webdesign blogger clean website theme website modern. Design pretty design, travelblogger adventure WordPress wanderlust theme blogger website expedition theme travelblogger. Adventure fun traveler pretty design website expedition.</p>
+   </section>
+   <hr class="dotted">
     <section class="content-section">
       <div class="text-content">
         <h2>Let's Go!</h2>
