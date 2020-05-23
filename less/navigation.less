@@ -19,14 +19,15 @@
           @media @mobile{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
+            justify-content: space-evenly;
+            width: 90%;
         }
     } //Really struggling to get the navigation links to fill out the width. It is possible a style is overriding it.
     @media @mobile{
         display: flex;
         flex-direction: column;
         width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
   }
-  
-  
+}

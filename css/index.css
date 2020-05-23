@@ -189,10 +189,20 @@ img {
   padding: 4%;
 }
 @media (max-width: 500px) {
-  header.navigation {
+  .navigation nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
     display: flex;
     flex-direction: column;
     width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
   }
 }
 .footer {
