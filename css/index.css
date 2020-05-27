@@ -235,18 +235,18 @@ img {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.home .content-section .text-content .img-content {
   width: 48%;
   padding-left: 1%;
+  margin-left: 20px;
 }
-.home .content-section .img-content img {
-  border-radius: 10px;
+.home .content-section .text-content img {
+  border-radius: 15px;
 }
 @media (max-width: 500px) {
-  .home .content-section {
+  .home .content-section .text-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     box-sizing: border-box;
   }
@@ -306,8 +306,9 @@ img {
   background-color: #17A2B8;
   text-align: center;
 }
-.home .btn p {
+.home .btn p.whatever {
   color: #FFFFFF;
-  font-size: 1.925rem;
+  font-size: 1.5rem;
   text-align: center;
+  margin-top: 10px;
 }
