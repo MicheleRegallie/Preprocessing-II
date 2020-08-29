@@ -1,5 +1,13 @@
 .home {
-
+  .dotted{
+    border-top: 3px dotted @navigation-border;
+    margin-top: 2%;
+} 
+.header{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5%;
+}
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -11,16 +19,23 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
-
+      .img-content {
+        width: 48%;
+        padding-left: 1%;
+        margin-left: 20px;
+      }
       img {
-        border-radius: 10px;
+        border-radius: 15px;
+      }
+      @media @mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
       }
     }
+    
   }
 
   .inverse-content {
@@ -35,6 +50,12 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+    @media @mobile{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 
@@ -57,5 +78,25 @@
       width: 30%;
       margin-bottom: 30px;
     }
+    @media @mobile{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+    }
+  }
+  .btn{
+    .border(15px);
+    padding: 2%;
+    background-color: @button-bg;
+    text-align: center;
+    p.whatever {
+      color: @white;
+      font-size: 1.5rem;
+      text-align:center;
+      margin-top: 10px;
+    }
   }
 }// home
+
